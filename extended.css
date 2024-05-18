@@ -1,0 +1,68 @@
+.separate p {
+    font-size: 17px; /* Set the desired font size */
+    color: white; /* Change the font color to white */
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.closing p {
+    text-align:center;
+}
+
+.my-slideshow {
+    width: 50%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the slideshow horizontally */
+  }
+  
+  .my-slideshow div {
+    text-align: center; /* Center the content within each slide */
+  }
+  
+  .my-slideshow img,
+  .my-slideshow video {
+    max-width: 10%; /* Ensure images and videos don't exceed the width of the slideshow */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .memories .my-slideshow {
+    max-width: 10%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the slideshow horizontally */
+  }
+
+  .memories {
+    max-width: 5000px;
+    overflow: hidden;
+  }
+
+  .my-slideshow div {
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+  }
+  
+  .my-slideshow img,
+  .my-slideshow video {
+    max-width: 100%;
+    height: auto;
+    margin: 0; /* Reset margin */
+    padding: 0; /* Reset padding */
+  }
+  
+  /* Adjust spacing between slideshow items */
+  .my-slideshow div {
+    margin-right: 10px; /* Adjust as needed */
+  }
+
+  .my-slideshow {
+    display: flex;
+    justify-content: center; /* Horizontally center the items */
+  }
+  
+  .my-slideshow div {
+    margin-right: 10px; /* Adjust as needed */
+
+  }
+
+  body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  

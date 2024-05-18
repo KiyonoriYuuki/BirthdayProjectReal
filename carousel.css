@@ -1,0 +1,111 @@
+.container {
+    width: 360px;
+    height: 700px;
+    padding: 25px 30px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    background: linear-gradient(#000000 0%, #bb2c33 90%);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.541);
+    background-blend-mode: screen;
+    transition: opacity 0.5s ease;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+}
+
+.carousel ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel__tracker-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel__track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel__slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Ensure the slide takes full height */
+}
+
+.carousel__slide p {
+    margin: 0;
+    padding: 0;
+    white-space: normal; /* Ensures text wraps normally */
+    overflow-y: auto; /* Allows vertical scroll if text is too long */
+    max-height: 90%; /* Constrains the maximum height */
+    text-overflow: ellipsis; /* Adds ellipsis if text is too long */
+    width: 100%; /* Ensure the text container takes full width */
+    text-align: left; /* Center align the text */
+}
+
+.carousel__slide.hidden p {
+    max-height: 150px; /* Restrict the height for the second slide */
+    overflow-y: auto; /* Allows vertical scroll if text is too long */
+}
+
+.carousel__button {
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    top: 50%;
+    z-index: 2; /* Ensure buttons are above other elements */
+}
+
+.carousel__button img {
+    width: 30px;
+    filter: invert(100%);
+}
+
+
+.carousel__button--left {
+    position: absolute;
+    left: -60px; /* Adjust as needed */
+}
+
+.carousel__button--right {
+    position: absolute;
+    right: -60px; /* Adjust as needed */
+}
+
+.carousel__button img {
+    width: 30px;
+}
+
+.carousel__nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0 5px;
+}
+
+.carousel__indicator.current-slide {
+    background: rgb(255, 0, 0);
+    opacity: 1;
+}
+
